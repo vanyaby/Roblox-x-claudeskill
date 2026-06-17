@@ -1,0 +1,8 @@
+{
+  "name": "roblox-place",
+  "version": "0.1.0",
+  "description": "Inspect and edit Roblox place/model files (.rbxl, .rbxlx, .rbxm, .rbxmx) from Claude Code without opening Roblox Studio. Bundles a dependency-free Node decoder for inspection and Lune (Luau + rbx-dom) for safe round-trip editing.",
+  "keywords": ["roblox", "rbxl", "rbxm", "luau", "lune", "rbx-dom", "gamedev"],
+  "author": { "name": "vanyaby" },
+  "license": "MIT"
+}

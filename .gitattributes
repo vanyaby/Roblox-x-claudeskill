@@ -1,0 +1,6 @@
+# Normalize line endings: keep LF in the repo for cross-platform tooling.
+* text=auto eol=lf
+*.js   text eol=lf
+*.luau text eol=lf
+*.md   text eol=lf
+*.json text eol=lf

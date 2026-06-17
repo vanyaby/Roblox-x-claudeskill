@@ -1,0 +1,16 @@
+# Lune cache / downloaded binaries
+.bin/
+*.zip
+lune
+lune.exe
+
+# Node
+node_modules/
+
+# Decoder outputs (generated next to the file being inspected)
+*.tree.json
+*.scripts/
+
+# OS cruft
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+{
+  "name": "roblox-tools",
+  "owner": { "name": "vanyaby" },
+  "metadata": {
+    "description": "Tools for working with Roblox files from Claude Code.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "roblox-place",
+      "source": "./",
+      "description": "Inspect and edit Roblox place/model files (.rbxl/.rbxm) without Roblox Studio."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" width="1100" height="300" role="img" aria-label="roblox-place — inspect and edit Roblox files from Claude Code">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#36c0ff"/>
+      <stop offset="1" stop-color="#0e84d4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#0e84d4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0e84d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- backdrop -->
+  <rect x="0" y="0" width="1100" height="300" rx="18" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1098" height="298" rx="17" fill="none" stroke="#222a35" stroke-width="2"/>
+  <circle cx="175" cy="160" r="150" fill="url(#glow)"/>
+
+  <!-- isometric Roblox brick -->
+  <g stroke="#08283f" stroke-width="2" stroke-linejoin="round">
+    <polygon points="170,70 250,115 170,160 90,115" fill="url(#top)"/>
+    <polygon points="90,115 170,160 170,240 90,195" fill="#0a66b0"/>
+    <polygon points="170,160 250,115 250,195 170,240" fill="#074e88"/>
+  </g>
+  <!-- stud -->
+  <ellipse cx="165" cy="118" rx="24" ry="12" fill="#0a6bb0"/>
+  <rect x="141" y="106" width="48" height="12" fill="#0e84d4"/>
+  <ellipse cx="165" cy="106" rx="24" ry="12" fill="#5bd4ff"/>
+
+  <!-- wordmark -->
+  <text x="330" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="68" font-weight="800" letter-spacing="-1">
+    <tspan fill="#e6edf3">roblox</tspan><tspan fill="#00a2ff">-place</tspan>
+  </text>
+
+  <!-- tagline -->
+  <text x="332" y="188" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="23" fill="#9aa4af">
+    Inspect &amp; edit Roblox files from Claude Code — no Studio needed
+  </text>
+
+  <!-- format chips -->
+  <g font-family="Consolas, ui-monospace, monospace" font-size="15" fill="#8b949e" text-anchor="middle">
+    <rect x="332" y="208" width="62"  height="28" rx="9" fill="#1b212b" stroke="#30363d"/>
+    <text x="363" y="227">.rbxl</text>
+    <rect x="402" y="208" width="72"  height="28" rx="9" fill="#1b212b" stroke="#30363d"/>
+    <text x="438" y="227">.rbxlx</text>
+    <rect x="482" y="208" width="72"  height="28" rx="9" fill="#1b212b" stroke="#30363d"/>
+    <text x="518" y="227">.rbxm</text>
+    <rect x="562" y="208" width="80"  height="28" rx="9" fill="#1b212b" stroke="#30363d"/>
+    <text x="602" y="227">.rbxmx</text>
+    <rect x="654" y="208" width="150" height="28" rx="9" fill="#11233a" stroke="#0e84d4"/>
+    <text x="729" y="227" fill="#5bd4ff">Claude Code plugin</text>
+  </g>
+</svg>
