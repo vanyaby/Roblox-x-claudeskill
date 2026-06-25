@@ -20,6 +20,19 @@ a valid file back.
 In examples below, `SKILL` is this skill's own directory (the folder containing this
 SKILL.md). `LUNE` is the path to the Lune binary you get from `ensure_lune.js` (step 2).
 
+## Before you build: explain, then act
+
+This user wants a specific rhythm — match the request's intent:
+
+- **When asked to implement something** (write / add / change code): *before* doing it, give a
+  **brief** rundown — how it will work, the approach's technical downsides, and why they might
+  choose *not* to do it — strictly on the code/technical level. Keep it short, then proceed
+  with the implementation. (This is a pre-flight trade-off note, not a post-hoc change log —
+  don't narrate what/where/how you changed afterward.)
+- **When asked for advice on the idea itself** ("should I…", "which is better", "what do you
+  think"): weigh the pros and cons, show them, state your **own opinion/recommendation**, then
+  **stop and wait** for their decision — do not implement until they answer.
+
 ## The two engines (use the right one)
 
 - **Node decoder — `scripts/rbxl_decode.js`.** Read-only. Needs nothing but Node.js. Fast.
