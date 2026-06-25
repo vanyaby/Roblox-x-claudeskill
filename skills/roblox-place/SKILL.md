@@ -5,7 +5,9 @@ description: >-
   without Roblox Studio. Use whenever the user mentions a .rbxl/.rbxlx/.rbxm/.rbxmx file or a
   Roblox AutoRecovery/AutoSave, or asks to decode, inspect, dump the tree, extract scripts,
   edit properties, rename, or add/remove objects or scripts in a Roblox place or model.
-  Bundles a dependency-free Node decoder for inspection and Lune (Luau + rbx-dom) for safe editing.
+  Bundles a dependency-free Node decoder for inspection and Lune (Luau + rbx-dom) for safe editing,
+  plus a Luau gameplay scripting-patterns reference (combat, hitboxes, guns, networking, VFX) to
+  consult when writing or generating script code that goes into a place.
 ---
 
 # Roblox Place & Model Editor
@@ -134,6 +136,13 @@ fs.writeFile("out.rbxl", roblox.serializePlace(game))
 Read **`references/lune-api.md`** before writing a custom script — it lists the available
 API, how to construct datatypes (Vector3, Color3, CFrame, enums), and the common gotchas.
 
+Two different references, don't mix them up: `lune-api.md` is the *file-editing* API (how to
+manipulate the DOM and serialize back). When the thing you're authoring is the **gameplay
+Luau that runs inside the place** — combat, hitboxes, damage/knockback, combos, guns,
+viewmodels, networking, VFX, anti-cheat — consult **`references/roblox-scripting-library.md`**
+for proven function examples and patterns so the generated code uses current APIs (e.g.
+`LinearVelocity` + spatial queries) instead of deprecated ones (`BodyVelocity`, `.Touched`).
+
 ## Limits & honesty
 
 - Lune **edits files; it does not run the game.** To playtest behavior, the user opens the
@@ -162,3 +171,9 @@ to the cheapest path that answers the question:
   enums, and gotchas. Load before writing a custom Luau edit.
 - `references/binary-format.md` — how the binary `.rbxl` is laid out (chunks, LZ4,
   referent encoding). Load when working on the decoder or debugging a parse.
+- `references/roblox-scripting-library.md` — Luau **gameplay** patterns & function
+  examples (hitboxes, damage/knockback, combos, raycasting, viewmodels, guns, networking,
+  lag-compensation, VFX, anti-cheat), distilled from the Roblox DevForum with each snippet
+  sourced. Load when writing or generating the *source* that goes into a Script — not for
+  editing the file structure. Has a navigation table + symptom→fix cheat-sheet at the top;
+  grep it by API name (`GetPartsInPart`, `LinearVelocity`, `ViewportPointToRay`, …).
