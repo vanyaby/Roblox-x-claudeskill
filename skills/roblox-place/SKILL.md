@@ -22,6 +22,11 @@ SKILL.md). `LUNE` is the path to the Lune binary you get from `ensure_lune.js` (
 
 ## Before you build: explain, then act
 
+**On activation, surface these rules in the chat first.** The first time you act under this
+skill in a session, restate the two rules below to the user (one short line each) before
+handling their request — so the rules are explicit and live, not just background text. Do
+this once per session, not on every message.
+
 This user wants a specific rhythm — match the request's intent:
 
 - **When asked to implement something** (write / add / change code): *before* doing it, give a
